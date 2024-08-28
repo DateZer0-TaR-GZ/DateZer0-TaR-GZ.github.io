@@ -1,0 +1,354 @@
+
+
+
+.nav-links a.active{
+    position: relative;
+    left: 0;
+    transition: none;
+}
+
+.nav-links a {
+    color: #1d1c1c;
+    margin-left: 40px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    left: 0;
+}
+.hero nav .navv-links a:hover,
+.hero nav .navv-links a.active{
+    color: #5f3838;
+}
+
+.hero nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.contact {
+    min-height: absolute;
+    padding: 20px;
+    text-align: left;
+
+}
+
+.container{ 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color:#1d1c1c;
+}
+
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: (1fr, 1fr);
+    grid-gap: 20px;
+}
+
+
+.container {
+    opacity: 0;
+    animation: fade-specialized 0.5 linear fowards;
+    animation-delay: 0.2s;
+    transition: 0.4s;
+}
+
+.container {
+    animation: fade-specialized 0.5s linear forwards;
+    animation-delay: 0.7s;
+}
+
+@keyframes fade-container {
+    0% {
+        opacit: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1d1c1c;
+    text-align: left;
+}
+
+.contact-form {
+    opacity: 0;
+    animation: fade-specialized 0.5 linear fowards;
+    animation-delay: 0.2s;
+    transition: 0.4s;
+}
+
+.contact-form {
+    animation: fade-specialized 0.5s linear forwards;
+    animation-delay: 0.9s;
+}
+
+@keyframes fade-contact-form {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+form{
+    border-color:#1d1c1c;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group{
+    opacity: 0;
+    animation: fade-specialized 0.5 linear fowards;
+    animation-delay: 0.2s;
+    transition: 0.4s;
+}
+
+
+input:placeholder-shown,
+textarea:placeholder-shown {
+    color: #1d1c1c;
+}
+
+
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+    color: #fff; 
+}
+
+
+
+.form-group{
+    position: relative;
+    left: 100px;
+    animation: slide-right .5s linear forwards;
+    animation-delay: 1.3s;
+    opacity: 0;
+}
+@keyframes slide-right{
+    0%{
+        left: 100px;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
+
+.send{
+    padding: 15px 20px;
+    background-color: #242424;
+    border: 2px solid #242424;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.send:hover{
+    color: #1d1c1c;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.send {
+    opacity: 0;
+    animation: fade-specialized 0.5 linear fowards;
+    animation-delay: 0.2s;
+    transition: 0.4s;
+}
+
+.send {
+    animation: fade-specialized 0.5s linear forwards;
+    animation-delay: 1.4s;
+}
+
+@keyframes fade-send {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.div-img{
+    width:30%;
+    float: right;
+    margin-top: 20px;
+}
+
+.div-img img {
+    width: 100%;
+}
+
+.div-img img{
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fade-img .5s linear forwards;
+    animation-delay: 2.1s;
+}
+@keyframes fade-img{
+    0%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.contact {
+    text-align: left; 
+}
+
+
+input, textarea{
+    width: 45%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1d1c1c;
+    color: #1d1c1c;
+
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #fff;
+    transition: 0.3s; 
+    transform: scale(1.1);
+}
+
+
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;  
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: #45a049;
+}
+
+
+.Contact-info {
+    margin-bottom: 100px; /* Adjust margin for spacing */
+    text-align: left;
+
+}
+
+.Contact-info h3 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: left;
+}
+
+.Contact-info p, .Contact-info i {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.Contact-info {
+    opacity: 0;
+    animation: fade-specialized 0.5 linear fowards;
+    animation-delay: 0.2s;
+    transition: 0.4s;
+}
+
+.Contact-info {
+    animation: fade-Contact-info 0.5s linear forwards;
+    animation-delay: 1.6s;
+}
+
+@keyframes fade-Contact-info {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Add specific styles for div-img */
+.div-img {
+    margin-top: -13.45%; /* Adjust margin for spacing */
+    margin-right: 12.1%;
+}
+
+.div-img img {
+    width: 133.34%;
+}
+
+.div-img {
+    opacity: 0;
+    animation: fade-specialized 0.5 linear fowards;
+    animation-delay: 0.2s;
+    transition: 0.4s;
+}
+
+.div-img {
+    animation: fade-specialized 0.5s linear forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes fade-div-img{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .contact-wrapper{
+        grid-template-columns: 1fr;
+    
+    }
+    
+    .div-img{
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
